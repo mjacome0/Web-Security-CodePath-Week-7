@@ -11,7 +11,7 @@ Time spent: **X** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
-  - [x] GIF Walkthrough: 
+  - [x] GIF Walkthrough: ![](xss.gif)
   - [x] Steps to recreate:
   1. Using an account with editing priveleges, make a reply with the following text:
   ```
