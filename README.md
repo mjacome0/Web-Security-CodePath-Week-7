@@ -6,14 +6,19 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
+1. Unauthenticated Stored Cross-Site Scripting
+  - [x] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.1
+  - [x] GIF Walkthrough: 
+  - [x] Steps to recreate:
+  1. Using an account with editing priveleges, make a reply with the following text:
+  ```
+  <a href = "" onmouseover=alert("Hacked") >Click here</a>
+  ```
+  2. Once someone hovers there mouse over the link, the script will be ran.
+  - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
