@@ -19,7 +19,7 @@ Time spent: **X** hours spent in total
   ```
   2. Once someone hovers there mouse over the link, the script will be ran.
   - [x] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/4.2/src/wp-includes/comment-template.php)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
