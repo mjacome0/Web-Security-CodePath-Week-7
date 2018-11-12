@@ -25,7 +25,7 @@ Time spent: **X** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.13
-  - [x] GIF Walkthrough: 
+  - [x] GIF Walkthrough: ![](audoxss1.gif)
   - [x] Steps to recreate:
   1. Download the xss.mp3 audio file found at the bottom of this page: https://seclists.org/oss-sec/2017/q1/563
   Any audio file should work as long as its meta data is properly formatted to run the specified script.
@@ -38,7 +38,7 @@ Time spent: **X** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 
-  - [x] GIF Walkthrough:
+  - [x] GIF Walkthrough: ![](imagexss1.gif)
   - [x] Steps to recreate: 
   1. Insert this line of code into the picture's title:
   ```
@@ -47,7 +47,7 @@ Time spent: **X** hours spent in total
   2. Create a new post and add a gallery including that picture.
   3. On the preview, we can see that when a user clicks on the image the script is ran. 
   
-  - [ ] Affected source code:
+  - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
