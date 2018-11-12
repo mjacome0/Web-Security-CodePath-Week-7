@@ -6,7 +6,7 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. Unauthenticated Stored Cross-Site Scripting
+1. Stored Cross-Site Scripting
   - [x] Summary: A user with editing privileges can inject a script in a reply message which is executed when the mouse is hovered over the link.
     - Vulnerability types: XSS
     - Tested in version: 4.2
@@ -20,7 +20,7 @@ Time spent: **X** hours spent in total
   2. Once someone hovers there mouse over the link, the script will be ran.
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.2/src/wp-includes/comment-template.php)
-2. Authenticated Cross-Site Scripting (XSS) via Media File Metadata
+2. Cross-Site Scripting (XSS) via Media File Metadata
   - [x] Summary: A user can upload an audio file with meta data containing a script to be exectued once the audio file is added to a post's playlist
     - Vulnerability types: XSS
     - Tested in version: 4.2
@@ -33,13 +33,20 @@ Time spent: **X** hours spent in total
   
   - [x] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
+1. Cross-Site Scripting (XSS) via Image Title
+  - [x] Summary: A user can change the title of an image and attach it to a post in order to run a script once the image is clicked on. 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
     - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+  - [x] GIF Walkthrough:
+  - [x] Steps to recreate: 
+  1. Insert this line of code into the picture's title:
+  ```
+  <img src=hacked onerror=alert("Hacked")>
+  ```
+  2. Create a new post and add a gallery including that picture.
+  3. On the preview, we can see that when a user clicks on the image the script is ran. 
+  
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Optional) Vulnerability Name or ID
