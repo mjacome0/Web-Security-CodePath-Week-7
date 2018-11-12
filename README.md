@@ -54,7 +54,7 @@ Time spent: **6** hours spent in total
     - Vulnerability types: User Enumeration
     - Tested in version: 4.2
     - Fixed in version: This was never fixed. Wordpress doesn't se this as a vulnerability. Other websites are similar where usernames are visible. In previous labs we had to guess an accounts username before moving forward which now makes me think that it as risky if usernames are public. 
-  - [x] GIF Walkthrough: ![]users.gif
+  - [x] GIF Walkthrough: ![](users.gif)
   - [x] Steps to recreate: 
   1. Entering in a username that doesn't exist informs us there's no account with that username.
   2. Entering in a username but the wrong password, informs us the password is wrong but we can infer that an account with that username does exist. 
