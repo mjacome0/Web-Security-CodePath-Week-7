@@ -33,7 +33,7 @@ Time spent: **X** hours spent in total
   
   - [x] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7)
-1. Cross-Site Scripting (XSS) via Image Title
+3. Cross-Site Scripting (XSS) via Image Title
   - [x] Summary: A user can change the title of an image and attach it to a post in order to run a script once the image is clicked on. 
     - Vulnerability types: XSS
     - Tested in version: 4.2
@@ -48,7 +48,7 @@ Time spent: **X** hours spent in total
   3. On the preview, we can see that when a user clicks on the image the script is ran. 
   
   - [x] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/4.2/src/wp-content/themes/twentyfifteen/image.php)
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
