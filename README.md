@@ -25,7 +25,7 @@ Time spent: **X** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.13
-  - [x] GIF Walkthrough: ![](audioxss.gif)
+  - [x] GIF Walkthrough: ![]()
   - [x] Steps to recreate:
   1. Download the xss.mp3 audio file found at the bottom of this page: https://seclists.org/oss-sec/2017/q1/563
   Any audio file should work as long as its meta data is properly formatted to run the specified script.
