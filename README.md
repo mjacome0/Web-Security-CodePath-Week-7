@@ -7,27 +7,31 @@ Time spent: **X** hours spent in total
 ## Pentesting Report
 
 1. Unauthenticated Stored Cross-Site Scripting
-  - [x] Summary: 
+  - [x] Summary: A user with editing privileges can inject a script in a reply message which is executed when the mouse is hovered over the link.
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
   - [x] GIF Walkthrough: ![](xss1.gif)
   - [x] Steps to recreate:
-  1. Using an account with editing priveleges, make a reply with the following text:
+  1. Using an account with editing privileges, make a reply with the following text:
   ```
   <a href = "" onmouseover=alert("Hacked") >Click here</a>
   ```
   2. Once someone hovers there mouse over the link, the script will be ran.
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.2/src/wp-includes/comment-template.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
+2. Authenticated Cross-Site Scripting (XSS) via Media File Metadata
+  - [x] Summary: A user can upload an audio file with meta data containing a script to be exectued once the audio file is added to a post's playlist
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.13
+  - [x] GIF Walkthrough: ![](audioxss.gif)
+  - [x] Steps to recreate:
+  1. Download the xss.mp3 audio file found at the bottom of this page: (https://seclists.org/oss-sec/2017/q1/563)
+  Any audio file should work as long as it's meta data is properly formatted to run the specified script.
+  2. Create a new post and add the audio file to the post's playlist
+  
+  - [z] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
